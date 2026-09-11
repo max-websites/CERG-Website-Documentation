@@ -49,6 +49,7 @@ PAGES = [
     ("Analytics", "How to see page views"),
     ("Analytics", "How to see downloads of Working Papers"),
     ("Analytics", "How to see links clicked"),
+    ("Analytics", "How to set up link tracking"),
 ]
 
 DOCS_DIR = Path("docs")

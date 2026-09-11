@@ -66,9 +66,10 @@ nav:
       - "Updating YT video feeds": changing-content/updating-yt-video-feeds.md
       - "Archive a team member": changing-content/archive-a-team-member.md
   - Analytics:
-      - "How to see page views": analytics/how-to-see-page-views.md
-      - "How to see downloads of Working Papers": analytics/how-to-see-downloads-of-working-papers.md
-      - "How to see links clicked": analytics/how-to-see-links-clicked.md
+      - "Analyze page views": analytics/how-to-see-page-views.md
+      - "View downloads of Working Papers": analytics/how-to-see-downloads-of-working-papers.md
+      - "View links clicked": analytics/how-to-see-links-clicked.md
+      - "How to set up link tracking": analytics/how-to-set-up-link-tracking.md
 
 markdown_extensions:
   - admonition
