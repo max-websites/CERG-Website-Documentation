@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../new-content/creating-a-new-working-paper/" class="md-tabs__link">
+        <a href="../../new-content/applying-a-working-paper-template/" class="md-tabs__link">
           
   
   New Content
@@ -450,6 +450,23 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Update info on a page
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="././" class="md-nav__link md-nav__link--active">
         
   
@@ -465,6 +482,59 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#update-text-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Update text content
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activating-a-page-image-document" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Activating a page, image, document
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-an-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Updating an image
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -699,14 +769,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../../new-content/creating-a-new-working-paper/" class="md-nav__link">
+      <a href="../../new-content/applying-a-working-paper-template/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Creating a new Working Paper
+  Applying a Working Paper Template
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../new-content/adding-a-working-paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Adding a Working Paper
 
     
   </span>
@@ -733,34 +830,7 @@
   <span class="md-ellipsis">
     
   
-  How to upload new photos and documents
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../new-content/how-to-add-a-new-working-paper/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  How to add a new Working Paper
+  Uploading new photos and documents
 
     
   </span>
@@ -1001,14 +1071,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changing-content/updating-yt-video-feeds/" class="md-nav__link">
+      <a href="../../changing-content/yt-video-feeds/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Updating YT video feeds
+  YouTube video feeds
 
     
   </span>
@@ -1291,7 +1361,53 @@
                   
 
 <h1 id="update-info-on-a-page">Update info on a page</h1>
-<p>TODO: write instructions.</p>
+<h2 id="update-text-content">Update text content</h2>
+<ol>
+<li>Right click on the text you want to edit and select <code>Edit</code>.</li>
+<li>Make your changes in the text editor that appears. </li>
+<li>Use the formatting buttons a the top of the editor to format your text, add links, or (rarely) add images.</li>
+<li>Press the <code>OK</code> button and <a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a> to save your changes.</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Text with <code>{{ }}</code></p>
+<p>Don't edit text inside curly brackets <code>{{ }}</code> — it's a variable placeholder auto-filled by the site, and editing it breaks the component. </p>
+<p>If that text needs to change (e.g., event, working paper, or news article info), update it via <a href="../../new-content/adding-a-working-paper/">the documentation for that content type</a> instead; changes will automatically reflect on your page.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Custom Components &amp; Source Edit</p>
+<p>If you're having troubles editing specific content, it might have custom inline styles applied. In order to ensure the design is kept intact, select the source edit button (the far right button in the text editor) and find the text to edit. Keep the styles the same.</p>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../img/general-source-edit.png"><img alt="Example of the source edit button" src="../../img/general-source-edit.png" /></a></p>
+<figcaption>
+<p>Source edit button in the text editor</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../img/general-source-edit-enabled.png"><img alt="Example of the source edit button enabled" src="../../img/general-source-edit-enabled.png" /></a></p>
+<figcaption>
+<p>Source edit enabled in the text editor</p>
+</figcaption>
+</figure>
+</div>
+<h2 id="activating-a-page-image-document">Activating a page, image, document</h2>
+<p>Every time you make a change to a page, image, or document in AEM, you need to activate it for the changes to be reflected on the CERG website.</p>
+<h3 id="activate-a-page">Activate a page</h3>
+<h4 id="while-editing-inside-a-page">While editing inside a page</h4>
+<p>When editing inside a page, you can click the Page icon in your tooibar, then select <code>Activate Page</code>.</p>
+<p><a class="glightbox" data-type="image" href="../../img/general-activate-page-internal.png"><img alt="Activate Page" src="../../img/general-activate-page-internal.png" /></a></p>
+<h4 id="while-in-wcm">While in WCM</h4>
+<p>When in WCM, you can right click on the page and select <code>Activate</code>.</p>
+<p><a class="glightbox" data-type="image" href="../../img/general-activate-page-wcm.png"><img alt="Activate Page" src="../../img/general-activate-page-wcm.png" /></a></p>
+<h3 id="activate-an-image-or-document">Activate an image or document</h3>
+<p>When uploading or pasting images or documents, you can right click on the image or document and select <code>Activate</code>.</p>
+<p><a class="glightbox" data-type="image" href="../../img/general-activate-image-dam.png"><img alt="Activate Image" src="../../img/general-activate-image-dam.png" /></a></p>
+<h2 id="updating-an-image">Updating an image</h2>
+<div class="admonition info">
+<p class="admonition-title">Prerequisite</p>
+<p>You have already uploaded the image to AEM that you want to use. If you haven't done this, follow the steps in <a href="../../new-content/how-to-upload-new-photos-and-documents/">Uploading new photos and documents</a>.</p>
+</div>
+<p>If you're replacing an image, make sure to keep the same aspect ratio as the original or within the recommended aspect ratios given to you in instructions for that content. Otherwise, the design will worsen and may not look good on certain screen sizes.</p>
+<p>To edit an image, right click on the image and select <code>Edit</code>. You can then drag and drop a new image into the <code>Image</code> field from the sidebar. Press the <code>Crop</code> button to crop the image to the recommended aspect ratio.</p>
 
 
 

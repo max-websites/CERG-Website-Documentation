@@ -53,9 +53,9 @@ nav:
       - "About Lists": general/about-lists.md
       - "About page templates": general/about-page-templates.md
   - New Content:
-      - "Creating a new Working Paper": new-content/creating-a-new-working-paper.md
-      - "How to upload new photos and documents": new-content/how-to-upload-new-photos-and-documents.md
-      - "How to add a new Working Paper": new-content/how-to-add-a-new-working-paper.md
+      - "Applying a Working Paper Template": new-content/applying-a-working-paper-template.md
+      - "Adding a Working Paper": new-content/adding-a-working-paper.md
+      - "Uploading new photos and documents": new-content/how-to-upload-new-photos-and-documents.md
       - "How to add a new Op-ed": new-content/how-to-add-a-new-op-ed.md
       - "How to add an event": new-content/how-to-add-an-event.md
       - "How to add a news item": new-content/how-to-add-a-news-item.md
@@ -63,7 +63,7 @@ nav:
   - Changing Content:
       - "Updating the homepage": changing-content/updating-the-homepage.md
       - "Updating the agrivoltaics page": changing-content/updating-the-agrivoltaics-page.md
-      - "Updating YT video feeds": changing-content/updating-yt-video-feeds.md
+      - "YouTube video feeds": changing-content/yt-video-feeds.md
       - "Archive a team member": changing-content/archive-a-team-member.md
   - Analytics:
       - "Analyze page views": analytics/how-to-see-page-views.md
@@ -77,6 +77,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - attr_list
   - pymdownx.blocks.caption
   - pymdownx.snippets
@@ -85,6 +88,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:zensical.extensions.emoji.to_svg
       emoji_index: !!python/name:zensical.extensions.emoji.twemoji
+  - toc:
+      toc_depth: 2
 
 plugins:
   - mkdocs-video

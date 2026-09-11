@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../new-content/creating-a-new-working-paper/" class="md-tabs__link">
+        <a href="../../new-content/applying-a-working-paper-template/" class="md-tabs__link">
           
   
   New Content
@@ -477,6 +477,23 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Copy an existing component/design
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="././" class="md-nav__link md-nav__link--active">
         
   
@@ -492,6 +509,48 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-and-paste-within-the-same-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy and Paste within the same page
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copy-and-paste-to-different-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy and Paste to different pages
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -699,14 +758,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../../new-content/creating-a-new-working-paper/" class="md-nav__link">
+      <a href="../../new-content/applying-a-working-paper-template/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Creating a new Working Paper
+  Applying a Working Paper Template
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../new-content/adding-a-working-paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Adding a Working Paper
 
     
   </span>
@@ -733,34 +819,7 @@
   <span class="md-ellipsis">
     
   
-  How to upload new photos and documents
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../new-content/how-to-add-a-new-working-paper/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  How to add a new Working Paper
+  Uploading new photos and documents
 
     
   </span>
@@ -1001,14 +1060,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changing-content/updating-yt-video-feeds/" class="md-nav__link">
+      <a href="../../changing-content/yt-video-feeds/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Updating YT video feeds
+  YouTube video feeds
 
     
   </span>
@@ -1291,7 +1350,44 @@
                   
 
 <h1 id="copy-an-existing-componentdesign">Copy an existing component/design</h1>
-<p>TODO: write instructions.</p>
+<h2 id="copy-and-paste-within-the-same-page">Copy and Paste within the same page</h2>
+<ol>
+<li>Right click on an existing component and select <code>Copy</code>.</li>
+<li>Right click on an existing component or in the <code>Drag components and assets here</code> section and select <code>Paste</code>. It will paste the component above the one you right clicked on.</li>
+<li>Change the information in the new card by right clicking on it and selecting <code>Edit</code>. Make sure to update all necessary information.</li>
+<li>Press the <code>OK</code> button and <a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a> to save your changes.</li>
+</ol>
+<figure>
+<video controls width="100%">
+  <source src="../../video/adding a team member agrivoltaics.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Example of adding a second team member preview card on the Agrivoltaics page</p>
+</figcaption>
+</figure>
+<h2 id="copy-and-paste-to-different-pages">Copy and Paste to different pages</h2>
+<p>Unfortunately, there is no way to copy and paste components between different pages in AEM. If you want to copy a component from one page to another, you will need to manually create the component on the new page and manually copy over the design and content.</p>
+<p>Things to copy:
+1. Any text and image content.
+1. CSS classes and styles for the component and its column control (if applicable).
+1. Any other settings for the component (e.g. number of columns, pagination, captions, etc.).</p>
+<div class="admonition note">
+<p class="admonition-title">Custom Components &amp; Source Edit</p>
+<p>If you're having troubles copying a specific design, select the source edit button (the far right button in the text editor) and copy the raw HTML code over to the new component. Paste it in the new component's source edit mode as well. This will ensure the design is copied over exactly.</p>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../img/general-source-edit.png"><img alt="Example of the source edit button" src="../../img/general-source-edit.png" /></a></p>
+<figcaption>
+<p>Source edit button in the text editor</p>
+</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" data-type="image" href="../../img/general-source-edit-enabled.png"><img alt="Example of the source edit button enabled" src="../../img/general-source-edit-enabled.png" /></a></p>
+<figcaption>
+<p>Source edit enabled in the text editor</p>
+</figcaption>
+</figure>
+</div>
 
 
 

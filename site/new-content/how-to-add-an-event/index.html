@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-add-an-event" class="md-skip">
+        <a href="#creating-an-event" class="md-skip">
           Skip to content
         </a>
       
@@ -237,7 +237,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../creating-a-new-working-paper/" class="md-tabs__link">
+        <a href="../applying-a-working-paper-template/" class="md-tabs__link">
           
   
   New Content
@@ -689,14 +689,41 @@
   
   
     <li class="md-nav__item">
-      <a href="../creating-a-new-working-paper/" class="md-nav__link">
+      <a href="../applying-a-working-paper-template/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Creating a new Working Paper
+  Applying a Working Paper Template
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding-a-working-paper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Adding a Working Paper
 
     
   </span>
@@ -723,34 +750,7 @@
   <span class="md-ellipsis">
     
   
-  How to upload new photos and documents
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../how-to-add-a-new-working-paper/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  How to add a new Working Paper
+  Uploading new photos and documents
 
     
   </span>
@@ -806,6 +806,23 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  How to add an event
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="././" class="md-nav__link md-nav__link--active">
         
   
@@ -821,6 +838,70 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-event-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy the event template
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fill-in-page-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fill in Page Properties
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-the-event-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Editing the event page
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Activate
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1001,14 +1082,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../changing-content/updating-yt-video-feeds/" class="md-nav__link">
+      <a href="../../changing-content/yt-video-feeds/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Updating YT video feeds
+  YouTube video feeds
 
     
   </span>
@@ -1269,7 +1350,7 @@
     
     
       <li class="md-path__item">
-        <a href="../creating-a-new-working-paper/" class="md-path__link">
+        <a href="../applying-a-working-paper-template/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -1290,8 +1371,172 @@
                 
                   
 
-<h1 id="how-to-add-an-event">How to add an event</h1>
-<p>TODO: write instructions.</p>
+<h1 id="creating-an-event">Creating an event</h1>
+<details class="info">
+<summary>Prerequisites</summary>
+<p>You must be signed into your SFU account and have access to AEM in order to make changes. If you do not have access, please <a href="mailto:ahira@sfu.ca">contact Andy</a> to request access.</p>
+<p>Have as much of the details for the event ready as possible to fill in the page (title, summary, date, time, location, EventBrite link, etc.).</p>
+</details>
+<h2 id="copy-the-event-template">Copy the event template</h2>
+<p>In AEM, navigate to the events page and copy the event template.</p>
+<p><a class="md-button md-button--primary" href="https://author.sfu.ca/siteadmin#/content/sfu/politics/CERG/events" target="_blank">Events page in AEM's WMC <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.5 18.31 5.69 15.5l6.37-6.38H7.11V5.69h11.2v11.2h-3.42v-4.95z"/></svg></span></a></p>
+<ol>
+<li>In the events page, right click on the <code>202X Event Template</code> and select <code>Copy</code>.</li>
+<li>Click <code>Paste</code> to paste the template. Change the <code>Copy name</code> to this structure: <code>202X-XX-short-title</code> where:<ul>
+<li><code>X</code> is the year</li>
+<li><code>XX</code> is the month</li>
+<li><code>short-title</code> is 3-6 keywords of the event title (e.g., <code>2027-01-alternative-energy-comparison</code>).</li>
+</ul>
+</li>
+<li>The new page will show up at the end of the list of pages. You may have to go to the next page to see it.</li>
+</ol>
+<h2 id="fill-in-page-properties">Fill in Page Properties</h2>
+<p>Here we add the following information into the Page Properties of the new event page:</p>
+<table>
+<thead>
+<tr>
+<th>Content to be added</th>
+<th>Type of content</th>
+<th>Where it goes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>The first portion of the event title, before the colon (if applicable)</td>
+<td><code>Basic -&gt; Title</code></td>
+</tr>
+<tr>
+<td>Tags</td>
+<td>The keywords associated with the event</td>
+<td><code>Basic -&gt; Tags/Keywords</code></td>
+</tr>
+<tr>
+<td>Date</td>
+<td>The date the event is scheduled (both short <code>09/13/2026</code> and long formats <code>September 13, 2026</code>)</td>
+<td><code>Basic -&gt; Date</code> and <code>Advanced -&gt; Custom Properties -&gt; custom-event-date</code></td>
+</tr>
+<tr>
+<td>Subtitle (if applicable)</td>
+<td>The second portion of the event title, after the colon (if applicable)</td>
+<td><code>Basic -&gt; More Titles and Description -&gt; Subtitle</code></td>
+</tr>
+<tr>
+<td>Event Location</td>
+<td>A simple description of the event location (e.g., <code>SFU Burnaby Campus; AQ 1000</code>)</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-location-simple</code></td>
+</tr>
+<tr>
+<td>Location Type</td>
+<td>The type of the event location (e.g., <code>Online</code>, <code>In-person</code>, <code>Hybrid</code>)</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-location-type</code></td>
+</tr>
+<tr>
+<td>Event RSVP Link</td>
+<td>The URL link to the event registration page</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-rsvp-link</code></td>
+</tr>
+<tr>
+<td>Event Time</td>
+<td>The time the event is scheduled</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-time</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Open up the page.</li>
+<li>Select <code>Page Properties</code> from the <code>Page</code> menu.</li>
+<li>Go through the <code>Basic</code> and <code>Advanced</code> tabs in the Page Properties dialog and fill in the information above.</li>
+</ol>
+<p>Filling in this information in Page Properties will automatically populate the event page with that information.</p>
+<h3 id="adding-tags">Adding Tags</h3>
+<p>Tags are used to filter events by topic on the Publications &amp; Multimedia page and Agrivoltaics page.</p>
+<p>You must include the following tags for the event <strong>in the following order</strong> to appear in the correct places:</p>
+<table>
+<thead>
+<tr>
+<th>Type of tag</th>
+<th>Why</th>
+<th>Tag Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Topic</td>
+<td>To identify the topic of the Working Paper</td>
+<td>See a <a href="../applying-a-working-paper-template/#choose-a-template">list of topics here</a>.</td>
+</tr>
+<tr>
+<td>Event</td>
+<td>To identify it as an event; already on the template</td>
+<td>Event <br> <code>event</code></td>
+</tr>
+</tbody>
+</table>
+<figure>
+<video controls width="100%">
+  <source src="../../video/adding tags to an op-ed.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Filling in Page Properties for an event [coming soon]</p>
+</figcaption>
+</figure>
+<h2 id="editing-the-event-page">Editing the event page</h2>
+<p>While most content is added through Page Properties, some content is added directly to the page. This includes:</p>
+<table>
+<thead>
+<tr>
+<th>Content to be added</th>
+<th>Type of content</th>
+<th>Where it goes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Summary</td>
+<td>A brief overview of the event</td>
+<td>On right side of the page</td>
+</tr>
+<tr>
+<td>Related works</td>
+<td>optional; links to the related working paper</td>
+<td>Below summary</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-the-event-summary">Add the event summary</h3>
+<p>Simply edit the summary text box on the right side of the page to add a brief overview of the event. This should be a short paragraph that describes the event and what's being presented, includes sponsors and collaborators, and entices users to register.</p>
+<figure>
+<video controls width="100%">
+  <source src="../../video/how to change the event summary.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Editing the event summary</p>
+</figcaption>
+</figure>
+<h3 id="add-the-related-working-paper-optional">Add the related working paper (optional)</h3>
+<p>If the event is presenting a working paper, and you have the working paper <a href="../adding-a-working-paper/">already created in AEM</a>, you can set this section to display the working paper card on the event page.</p>
+<p><strong>If your event doesn't have one or you don't want to display it, delete this component and it's header.</strong></p>
+<p>If you still want to add it:</p>
+<ol>
+<li>Right click the Working Paper Tempalte (2026) card and select <code>Edit</code>.</li>
+<li>Go to the <code>Fixed list</code> tab</li>
+<li>Click the <code>Search</code> icon button next to the current list item and select the working paper you want to link to the event.</li>
+<li>Click <code>OK</code> to save your changes and close the dialog.</li>
+</ol>
+<figure>
+<video controls width="100%">
+  <source src="../../video/adding related working paper to event page.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Setting the related working paper</p>
+</figcaption>
+</figure>
+<h2 id="activate">Activate</h2>
+<p>If everything looks good and the event is ready to be added to the site, <a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a> to save your changes and publish it.</p>
 
 
 
