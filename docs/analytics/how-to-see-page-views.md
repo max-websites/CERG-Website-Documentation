@@ -37,7 +37,7 @@ Use the search bar at the top of the page to search for a specific page by its U
 Google Analytics page view results
 ///
 
-## Creating visualizations for page views over time.
+## Creating visualizations for page views over time
 
 !!! bug "Not working"
 
@@ -71,7 +71,7 @@ In Google Data Studio select the date range for the month you want to track page
 1. The line charts will now only show the months with data in them
 1. To add more data to each month, reselect the "Default" sheet view
 
-![Excel](../video/viewing excel chart.mp4){ .skip-lightbox }
+![type:video](../video/viewing excel chart.mp4){ .skip-lightbox }
 /// caption
 Viewing graph of page views over time in Excel
 ///
