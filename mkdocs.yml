@@ -1,6 +1,6 @@
 site_name: CERG Website Documentation
 site_description: How-to guides for editing the website
-site_url: https://www.sfu.ca/politics/CERG.html
+site_url: https://maxnielsen.ca/cerg
 
 theme:
   name: material

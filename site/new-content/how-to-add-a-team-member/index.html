@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://www.sfu.ca/politics/CERG.html/new-content/how-to-add-a-team-member/">
+        <link rel="canonical" href="https://maxnielsen.ca/cerg/new-content/how-to-add-a-team-member/">
       
       
         <link rel="prev" href="../how-to-add-a-news-item/">
@@ -85,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-add-a-team-member" class="md-skip">
+        <a href="#creating-a-team-member" class="md-skip">
           Skip to content
         </a>
       
@@ -860,6 +860,23 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  How to add a team member
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="././" class="md-nav__link md-nav__link--active">
         
   
@@ -875,6 +892,81 @@
   
 
       </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#copy-the-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Copy the template
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fill-in-page-properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fill in Page Properties
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fill-in-the-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Fill in the page
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-order-of-team-members" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Change order of team members
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activate" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Activate
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1290,8 +1382,156 @@
                 
                   
 
-<h1 id="how-to-add-a-team-member">How to add a team member</h1>
-<p>TODO: write instructions.</p>
+<h1 id="creating-a-team-member">Creating a team member</h1>
+<details class="info">
+<summary>Prerequisites</summary>
+<p>You must be signed into your SFU account and have access to AEM in order to make changes. If you do not have access, please <a href="mailto:ahira@sfu.ca">contact Andy</a> to request access.</p>
+<p>Have these details for the team member ready to fill in the page:</p>
+<ul>
+<li>Name</li>
+<li>What they do (i.e. Political Science professor @ SFU)</li>
+<li>Bio (paragraph or two about their work/research)</li>
+<li>Contact Information (i.e. LinkedIn profile, email)</li>
+<li>Headshot photo (square, 1:1 ratio, at least 500px x 500px)</li>
+</ul>
+</details>
+<h2 id="copy-the-template">Copy the template</h2>
+<p>In AEM, navigate to the CERG Team page and copy the Team Member Template.</p>
+<p><a class="md-button md-button--primary" href="https://author.sfu.ca/siteadmin#/content/sfu/politics/cerg/cerg-team" target="_blank">CERG Team page in AEM's WMC <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.5 18.31 5.69 15.5l6.37-6.38H7.11V5.69h11.2v11.2h-3.42v-4.95z"/></svg></span></a></p>
+<ol>
+<li>In the events page, right click on the <code>Team Member Template</code> and select <code>Copy</code>.</li>
+<li>Click <code>Paste</code> to paste the template. Change the <code>Copy name</code> to this structure: <code>firstname-lastname</code> where:<ul>
+<li><code>firstname</code> is the team member's first name</li>
+<li><code>lastname</code> is the team member's last name (if applicable)</li>
+</ul>
+</li>
+<li>The new page will show up at the end of the list of pages. You may have to go to the next page to see it.</li>
+</ol>
+<h2 id="fill-in-page-properties">Fill in Page Properties</h2>
+<p>Here we add the following information into the Page Properties of the new team member page:</p>
+<table>
+<thead>
+<tr>
+<th>Content to be added</th>
+<th>Type of content</th>
+<th>Where it goes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Title</td>
+<td>The first portion of the event title, before the colon (if applicable)</td>
+<td><code>Basic -&gt; Title</code></td>
+</tr>
+<tr>
+<td>Tags</td>
+<td>The keywords associated with the event</td>
+<td><code>Basic -&gt; Tags/Keywords</code></td>
+</tr>
+<tr>
+<td>Date</td>
+<td>The date the event is scheduled (both short <code>09/13/2026</code> and long formats <code>September 13, 2026</code>)</td>
+<td><code>Basic -&gt; Date</code> and <code>Advanced -&gt; Custom Properties -&gt; custom-event-date</code></td>
+</tr>
+<tr>
+<td>Subtitle (if applicable)</td>
+<td>The second portion of the event title, after the colon (if applicable)</td>
+<td><code>Basic -&gt; More Titles and Description -&gt; Subtitle</code></td>
+</tr>
+<tr>
+<td>Event Location</td>
+<td>A simple description of the event location (e.g., <code>SFU Burnaby Campus; AQ 1000</code>)</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-location-simple</code></td>
+</tr>
+<tr>
+<td>Location Type</td>
+<td>The type of the event location (e.g., <code>Online</code>, <code>In-person</code>, <code>Hybrid</code>)</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-location-type</code></td>
+</tr>
+<tr>
+<td>Event RSVP Link</td>
+<td>The URL link to the event registration page</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-rsvp-link</code></td>
+</tr>
+<tr>
+<td>Event Time</td>
+<td>The time the event is scheduled</td>
+<td><code>Advanced -&gt; Custom Properties -&gt; custom-event-time</code></td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>Open up the page.</li>
+<li>Select <code>Page Properties</code> from the <code>Page</code> menu.</li>
+<li>Go through the <code>Basic</code>, <code>Advanced</code>, and <code>Image</code> tabs in the Page Properties dialog and fill in the information above.</li>
+</ol>
+<p>Filling in this information in Page Properties will automatically populate the team member page with that information.</p>
+<h2 id="fill-in-the-page">Fill in the page</h2>
+<p>While most content is added through Page Properties, some content is added directly to the page. This includes:</p>
+<table>
+<thead>
+<tr>
+<th>Content to be added</th>
+<th>Type of content</th>
+<th>Where it goes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team Member Bio</td>
+<td>A paragraph or two about their work/research</td>
+<td>On right side of the page</td>
+</tr>
+<tr>
+<td>Contact Information</td>
+<td>Include at least one contact detail (LinkedIn, email)</td>
+<td>In red box on left side of the page</td>
+</tr>
+</tbody>
+</table>
+<h3 id="add-the-team-member-bio">Add the team member bio</h3>
+<p>Simply edit the About text box on the right side of the page to add a brief bio about the team member. This should be a short paragraph that describes their work, research, and contributions related to the field.</p>
+<figure>
+<video controls width="100%">
+  <source src="../../video/how to change the event summary.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Editing the event summary</p>
+</figcaption>
+</figure>
+<h3 id="add-their-contact-information">Add their contact information</h3>
+<p>Simply edit the red box on the left side of the page to add at least one contact detail for the team member. This can be a LinkedIn profile, email address, or any other relevant contact information.</p>
+<p>To be consistent, add the contact information in the following bulleted format:</p>
+<ul>
+<li>LinkedIn: <a href="https://www.linkedin.com/in/mnielsen-/">https://www.linkedin.com/in/mnielsen-/</a></li>
+<li>Email: <a href="mailto:mhn8@sfu.ca">mhn8@sfu.ca</a></li>
+<li>Phone: 778-636-4131</li>
+</ul>
+<p>Remember to add hyperlinks where appropriate (e.g., LinkedIn profile, email address) so that users can easily click to connect with the team member.</p>
+<figure>
+<video controls width="100%">
+  <source src="../../video/adding related working paper to event page.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Setting the related working paper</p>
+</figcaption>
+</figure>
+<h2 id="change-order-of-team-members">Change order of team members</h2>
+<p>The order of the team member pages in AEM will reflect the order they appear on the CERG Team page.</p>
+<p>To change that order, drag and drop the team member page to the desired position in the list of other team member pages. </p>
+<figure>
+<video controls width="100%">
+  <source src="../../video/adding related working paper to event page.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<figcaption>
+<p>Changing the order of team members</p>
+</figcaption>
+</figure>
+<h2 id="activate">Activate</h2>
+<p>If everything looks good and the event is ready to be added to the site, <a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a> to save your changes and publish it.</p>
 
 
 
