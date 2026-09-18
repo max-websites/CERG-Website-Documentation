@@ -1,4 +1,10 @@
-# Adding a Working Paper
+# Adding a new Publication
+This guide applies to adding a Working Paper, Op-Ed, or Journal Article, and more to the CERG website. The process is slightly different for each type.
+
+
+
+
+=== "Working Paper"
 
 ## Upload the Working Paper PDF to AEM and Google Drive
 ??? info "Prerequisites"

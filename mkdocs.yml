@@ -1,6 +1,6 @@
 site_name: CERG Website Documentation
 site_description: How-to guides for editing the website
-site_url: https://maxnielsen.ca/cerg
+site_url: https://cerg-docs.pages.dev
 
 theme:
   name: material
@@ -30,7 +30,7 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.instant.progress
-    - navigation.instant.preview
+    # - navigation.instant.preview
     - navigation.tracking
     - navigation.path
     - toc.follow
@@ -53,13 +53,13 @@ nav:
       - "About Lists": general/about-lists.md
       - "About page templates": general/about-page-templates.md
   - New Content:
-      - "Applying a Working Paper Template": new-content/applying-a-working-paper-template.md
-      - "Adding a Working Paper": new-content/adding-a-working-paper.md
       - "Uploading new photos and documents": new-content/how-to-upload-new-photos-and-documents.md
-      - "How to add a new Op-ed": new-content/how-to-add-a-new-op-ed.md
-      - "How to add an event": new-content/how-to-add-an-event.md
-      - "How to add a news item": new-content/how-to-add-a-news-item.md
-      - "How to add a team member": new-content/how-to-add-a-team-member.md
+      - "Applying a Working Paper Template": new-content/applying-a-working-paper-template.md
+      - "Adding a Publication": new-content/adding-a-working-paper.md
+      - "Adding an Op-ed": new-content/how-to-add-a-new-op-ed.md
+      - "Adding an event": new-content/how-to-add-an-event.md
+      - "Adding a news item": new-content/how-to-add-a-news-item.md
+      - "Adding a new team member": new-content/how-to-add-a-team-member.md
   - Changing Content:
       - "Updating the homepage": changing-content/updating-the-homepage.md
       - "Updating the agrivoltaics page": changing-content/updating-the-agrivoltaics-page.md
@@ -90,7 +90,11 @@ markdown_extensions:
       emoji_index: !!python/name:zensical.extensions.emoji.twemoji
   - toc:
       toc_depth: 2
-
+  - zensical.extensions.preview:
+      configurations:
+        - sources: 
+            exclude:
+              - "index.md"
 plugins:
   - mkdocs-video
   - search:

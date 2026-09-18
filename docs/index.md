@@ -40,13 +40,12 @@ This repository contains step-by-step instructions for adding and changing conte
 
     [:octicons-arrow-right-24: Set events on homepage](changing-content/updating-the-homepage/#change-events-on-the-homepage)
 
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :material-youtube:{ .lg .middle } __YouTube Embeds__
 
     ---
 
-    Zensical is licensed under MIT and available on [GitHub]
+    [:octicons-arrow-right-24: Changing a YouTube video feed](changing-content/yt-video-feeds.md)
 
-    [:octicons-arrow-right-24: License](#)
 
 </div>
 

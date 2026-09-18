@@ -10,7 +10,7 @@
       
       
       
-        <link rel="canonical" href="https://maxnielsen.ca/cerg/changing-content/yt-video-feeds/">
+        <link rel="canonical" href="https://cerg-docs.pages.dev/changing-content/yt-video-feeds/">
       
       
         <link rel="prev" href="../updating-the-agrivoltaics-page/">
@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../img/favicon.ico">
-      <meta name="generator" content="zensical-0.0.60">
+      <meta name="generator" content="zensical-0.0.62">
     
     
       
@@ -235,7 +235,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../new-content/applying-a-working-paper-template/" class="md-tabs__link">
+        <a href="../../new-content/how-to-upload-new-photos-and-documents/" class="md-tabs__link">
           
   
   New Content
@@ -686,6 +686,33 @@
   
   
     <li class="md-nav__item">
+      <a href="../../new-content/how-to-upload-new-photos-and-documents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Uploading new photos and documents
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../new-content/applying-a-working-paper-template/" class="md-nav__link">
         
   
@@ -720,34 +747,7 @@
   <span class="md-ellipsis">
     
   
-  Adding a Working Paper
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../new-content/how-to-upload-new-photos-and-documents/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Uploading new photos and documents
+  Adding a Publication
 
     
   </span>
@@ -774,7 +774,7 @@
   <span class="md-ellipsis">
     
   
-  How to add a new Op-ed
+  Adding an Op-ed
 
     
   </span>
@@ -801,7 +801,7 @@
   <span class="md-ellipsis">
     
   
-  How to add an event
+  Adding an event
 
     
   </span>
@@ -828,7 +828,7 @@
   <span class="md-ellipsis">
     
   
-  How to add a news item
+  Adding a news item
 
     
   </span>
@@ -855,7 +855,7 @@
   <span class="md-ellipsis">
     
   
-  How to add a team member
+  Adding a new team member
 
     
   </span>
@@ -1061,6 +1061,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-to-change-an-existing-feed" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        How to change an existing feed
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#how-to-set-up-a-new-feed" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
@@ -1072,10 +1083,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-change-an-existing-feed" class="md-nav__link">
+  <a href="#preview-activate" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        How to change an existing feed
+        Preview &amp; Activate
       </span>
     </span>
   </a>
@@ -1361,9 +1372,16 @@
                   
 
 <h1 id="youtube-video-feeds">YouTube video feeds</h1>
-<p>There are many YouTube feeds on the CERG website. Some feeds automatically pull in videos from a YouTube playlist, while others are manually curated to show specific videos.</p>
+<div class="admonition info">
+<p class="admonition-title">Embed Restrictions</p>
+<ul>
+<li>Our YouTube embed system can only accept videos that are uploaded to the <a href="https://www.youtube.com/@CERGSFU" target="_blank">CERG YouTube channel<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 17.59 15.59 7H9V5h10v10h-2V8.41L6.41 19z"/></svg></span></a>. Any videos or playlists from other channels will not work.</li>
+<li>The homepage will always show the latest videos uploaded to CERG's YouTube channel. Instructions are for changing the YouTube embeds on other pages.</li>
+</ul>
+</div>
+<p>There are many YouTube feeds on the CERG website that embed our videos onto CERG's website. Some feeds automatically pull in videos from a YouTube playlist, while others are manually curated to show specific videos.</p>
 <p>The feed is always inside a green HTML/embedded code component:</p>
-<p><a class="glightbox" data-type="image" href="../../img/changing-content-yt-feed-html.png"><img alt="Embedded code/HTML component" src="../../img/changing-content-yt-feed-html.png" /></a></p>
+<p><a class="glightbox" data-preview="" data-type="image" href="../../img/changing-content-yt-feed-html.png"><img alt="Embedded code/HTML component" src="../../img/changing-content-yt-feed-html.png" /></a></p>
 <h2 id="feed-properties">Feed properties</h2>
 <p>Every feed is controlled by a small set of settings. You won't need all of them at once. Which ones you fill in depends on what you want the feed to show:</p>
 <table>
@@ -1376,22 +1394,22 @@
 </thead>
 <tbody>
 <tr>
-<td>Videos <br> <code>data-videos</code></td>
+<td><code>data-videos</code></td>
 <td>Shows specific videos that you choose.</td>
 <td>Paste in one or more YouTube links separated by commas.</td>
 </tr>
 <tr>
-<td>Playlist <br> <code>data-playlist</code></td>
+<td><code>data-playlist</code></td>
 <td>Automatically shows the newest videos from a YouTube playlist. However the playlist is sorted on YouTube, it shows the videos in that order.</td>
 <td>Paste in the playlist link. Only one is supported.</td>
 </tr>
 <tr>
-<td>Max videos <br> <code>data-max-videos</code></td>
+<td><code>data-max-videos</code></td>
 <td>How many videos to show. Only matters when you're using Playlist. With Videos, the feed just shows however many you listed.</td>
 <td>Enter in a number; default is 2.</td>
 </tr>
 <tr>
-<td>Title style <br> <code>data-title-style</code></td>
+<td><code>data-title-style</code></td>
 <td>Controls how each video's title looks.</td>
 <td>Default is <code>regular</code> (bold text). Set to <code>heading</code> if the feed is more prominent on the page.</td>
 </tr>
@@ -1399,11 +1417,47 @@
 </table>
 <div class="admonition note">
 <p class="admonition-title">Videos &gt; Playlist</p>
-<p>If you fill in both Videos and Playlist, the feed will show the hand-picked videos you listed in Videos. The Playlist setting will be ignored.</p>
+<p>If you fill in both <code>data-videos</code> and <code>data-playlist</code>, the feed will show the hand-picked videos you listed in <code>data-videos</code>. <code>data-playlist</code> will be ignored.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Displays nothing if no videos or playlist are set</p>
-<p>This is expected. It ensures the feed can be used safely in templates without configuration when no videos or playlists are needed.</p>
+<p>If <code>data-videos</code> and <code>data-playlist</code> are empty, nothing shows up. This is expected. It ensures the feed can be used safely in templates without configuration when no videos or playlists are needed</p>
+</div>
+<h2 id="how-to-change-an-existing-feed">How to change an existing feed</h2>
+<div class="admonition info">
+<p class="admonition-title">Reset the feed before changing it</p>
+<p>Before putting in your own content, ensure <code>data-videos=""</code> and <code>data-playlist=""</code> to avoid conflicts. </p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="to-show-a-playlist" name="__tabbed_1" type="radio" /><input id="to-show-specific-videos" name="__tabbed_1" type="radio" /><input id="to-show-latest-uploads" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="to-show-a-playlist">To show a playlist</label><label for="to-show-specific-videos">To show specific videos</label><label for="to-show-latest-uploads">To show latest uploads</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>Copy the playlist link from YouTube. It should look like this: <code>https://www.youtube.com/playlist?list=PLHSY2zpB60yE</code></li>
+<li>Click the <code>Edit</code> button on the HTML component.</li>
+<li>Paste the playlist link into the <code>data-playlist</code> setting. </li>
+<li>If you want to show a specific number of videos, change the <code>data-max-videos</code> setting.</li>
+<li>Press the save button in the top left and close the coding window.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Find your video links from YouTube. They should look like this: <code>https://www.youtube.com/watch?v=video_id</code></li>
+<li>Click the <code>Edit</code> button on the HTML component.</li>
+<li>Paste the video links into the <code>data-videos</code> setting, separated by commas.</li>
+<li>If you want to show a specific number of videos, change the <code>data-max-videos</code> setting.</li>
+<li>Press the save button in the top left and close the coding window.</li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Click the <code>Edit</code> button on the HTML component.</li>
+<li>Fill in <code>data-playlist=""</code> with the channel's uploads playlist ID: 
+    <div class="highlight"><pre><span></span><code>UURAuV8XqQM0MD3VK_Pi32AA
+</code></pre></div></li>
+<li>Press the save button in the top left and close the coding window.</li>
+</ol>
+</div>
+</div>
 </div>
 <h2 id="how-to-set-up-a-new-feed">How to set up a new feed</h2>
 <ol>
@@ -1427,47 +1481,16 @@
 </code></pre></div></p>
 </li>
 <li>
-<p>Fill in <strong>one</strong> of the settings — either <code>data-videos</code> or <code>data-playlist</code>, following the details for the <a href="#feed-properties">feed properties</a> for whichever you're using.</p>
+<p>Fill in <strong>one</strong> of the settings — either <code>data-videos</code> or <code>data-playlist</code>, following the details for the <a data-preview="" href="#feed-properties">feed properties</a> for whichever you're using.</p>
 </li>
 <li>Press the save button in the top left and close the coding window.</li>
 <li>To see the feed before publishing, switch to preview mode and reload the page. The feed should show up in the column you added it to.</li>
-<li><a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a>.</li>
+<li><a data-preview="" href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a>.</li>
 </ol>
-<h2 id="how-to-change-an-existing-feed">How to change an existing feed</h2>
-<h3 id="to-show-a-youtube-playlist">To show a YouTube playlist</h3>
+<h2 id="preview-activate">Preview &amp; Activate</h2>
 <ol>
-<li>Copy the playlist link from YouTube. It should look like this: <code>https://www.youtube.com/playlist?list=PLHSY2zpB60yE</code></li>
-<li>Click the <code>Edit</code> button on the HTML component.</li>
-<li>Make sure <code>data-videos</code> is empty. It should be left as an empty string: <code>data-videos=""</code>.</li>
-<li>Paste the playlist link into the <code>data-playlist</code> setting. </li>
-<li>If you want to show a specific number of videos, change the <code>data-max-videos</code> setting.</li>
-<li>Press the save button in the top left and close the coding window.</li>
-<li>To see the feed before publishing, switch to preview mode and reload the page. </li>
-<li><a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a>.</li>
-</ol>
-<h3 id="to-show-specific-videos">To show specific videos</h3>
-<ol>
-<li>Find your video links from YouTube. They should look like this: <code>https://www.youtube.com/watch?v=video_id</code></li>
-<li>Click the <code>Edit</code> button on the HTML component.</li>
-<li>Make sure <code>data-playlist</code> is empty. It should be left as an empty string: <code>data-playlist=""</code>.</li>
-<li>Paste the video links into the <code>data-videos</code> setting, separated by commas.</li>
-<li>If you want to show a specific number of videos, change the <code>data-max-videos</code> setting.</li>
-<li>Press the save button in the top left and close the coding window.</li>
-<li>To see the feed before publishing, switch to preview mode and reload the page. </li>
-<li><a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a>.</li>
-</ol>
-<h3 id="to-show-the-homepage">To show the homepage</h3>
-<ol>
-<li>
-<p>Fill in <code>data-playlist=""</code> with the channel's uploads playlist ID: 
-    <div class="highlight"><pre><span></span><code>UURAuV8XqQM0MD3VK_Pi32AA
-</code></pre></div></p>
-</li>
-<li>
-<p>Make sure <code>data-videos</code> is empty. It should be left as an empty string: <code>data-videos=""</code>.</p>
-</li>
-<li>To see the feed before publishing, switch to preview mode and reload the page. </li>
-<li><a href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a>.</li>
+<li>To see the feed before publishing, switch to preview mode in AEM and reload the page. </li>
+<li><a data-preview="" href="../../general/update-info-on-a-page/#while-editing-inside-a-page">Activate the page</a>.</li>
 </ol>
 
 
@@ -1524,10 +1547,14 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.sections","navigation.tabs","navigation.expand","navigation.instant","navigation.instant.progress","navigation.instant.preview","navigation.tracking","navigation.path","toc.follow","toc.integrate","search.suggest","search.highlight","content.code.copy","content.tabs.link","content.tooltips"],"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.sections","navigation.tabs","navigation.expand","navigation.instant","navigation.instant.progress","navigation.tracking","navigation.path","toc.follow","toc.integrate","search.suggest","search.highlight","content.code.copy","content.tabs.link","content.tooltips"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.88ee1349.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8dcc8e9c.min.js"></script>
       
     
   </body>

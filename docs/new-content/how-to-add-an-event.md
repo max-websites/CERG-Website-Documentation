@@ -1,8 +1,32 @@
 # Creating an event
 ??? info "Prerequisites"
-    You must be signed into your SFU account and have access to AEM in order to make changes. If you do not have access, please [contact Andy](mailto:ahira@sfu.ca) to request access.
 
-    Have as much of the details for the event ready as possible to fill in the page (title, summary, date, time, location, EventBrite link, etc.).
+    Have as much of the details for the event ready as possible to fill in the page:
+
+    - Title
+    - Summary
+    - Date
+    - Time
+    - Location
+    - EventBrite link
+
+
+## Creating multiple ticket types in EventBrite
+
+<div class="grid" markdown>
+
+  Watch this video to learn how to create an event that has both in-perosn and online attendance options:
+ 
+<video controls width="100%">
+  <source src="../video/multiple ticket types in eventbrite.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+/// caption
+Multiple Ticket Types in EventBrite
+///
+
+</div>
+
 
 
 ## Copy the event template
